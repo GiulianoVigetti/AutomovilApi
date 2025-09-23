@@ -5,7 +5,7 @@ using Application.Exceptions;
 using Application.Repositories;
 using Core.Application;
 
-namespace Application.UseCases.DummyEntity.Commands.CreateDummyEntity
+/* namespace Application.UseCases.DummyEntity.Commands.CreateDummyEntity
 {
     /// <summary>
     /// Ejemplo de handler que responde al comando <see cref="CreateDummyEntityCommand"/>
@@ -40,5 +40,5 @@ namespace Application.UseCases.DummyEntity.Commands.CreateDummyEntity
                 throw new BussinessException(ApplicationConstants.PROCESS_EXECUTION_EXCEPTION, ex.InnerException);
             }
         }
-    }
-}
+    } 
+} */

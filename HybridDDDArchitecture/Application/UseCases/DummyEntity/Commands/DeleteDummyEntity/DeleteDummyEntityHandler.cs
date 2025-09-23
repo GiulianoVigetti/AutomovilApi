@@ -5,7 +5,7 @@ using Application.Repositories;
 using Core.Application;
 using MediatR;
 
-namespace Application.UseCases.DummyEntity.Commands.DeleteDummyEntity
+/* namespace Application.UseCases.DummyEntity.Commands.DeleteDummyEntity
 {
     internal sealed class DeleteDummyEntityHandler(ICommandQueryBus domainBus, IDummyEntityRepository dummyEntityRepository)
         : IRequestCommandHandler<DeleteDummyEntityCommand, Unit>
@@ -29,4 +29,4 @@ namespace Application.UseCases.DummyEntity.Commands.DeleteDummyEntity
             }
         }
     }
-}
+} */

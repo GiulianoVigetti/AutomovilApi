@@ -2,7 +2,7 @@
 
 namespace Application.DomainEvents
 {
-    internal sealed class DummyEntityDeleted : DomainEvent
+    /* internal sealed class DummyEntityDeleted : DomainEvent
     {
         public int DummyIdProperty { get; set; }
 
@@ -10,5 +10,5 @@ namespace Application.DomainEvents
         {
             DummyIdProperty = id;
         }
-    }
+    } */
 }

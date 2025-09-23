@@ -3,7 +3,7 @@ using MediatR;
 using System.ComponentModel.DataAnnotations;
 using static Domain.Enums.Enums;
 
-namespace Application.UseCases.DummyEntity.Commands.UpdateDummyEntity
+/* namespace Application.UseCases.DummyEntity.Commands.UpdateDummyEntity
 {
     public class UpdateDummyEntityCommand : IRequestCommand
     {
@@ -17,4 +17,4 @@ namespace Application.UseCases.DummyEntity.Commands.UpdateDummyEntity
         {
         }
     }
-}
+} */

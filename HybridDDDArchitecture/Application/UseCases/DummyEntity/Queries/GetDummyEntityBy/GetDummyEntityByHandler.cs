@@ -3,7 +3,7 @@ using Application.Exceptions;
 using Application.Repositories;
 using Core.Application;
 
-namespace Application.UseCases.DummyEntity.Queries.GetDummyEntityBy
+/* namespace Application.UseCases.DummyEntity.Queries.GetDummyEntityBy
 {
     internal sealed class GetDummyEntityByHandler(IDummyEntityRepository context) : IRequestQueryHandler<GetDummyEntityByQuery, DummyEntityDto>
     {
@@ -15,4 +15,4 @@ namespace Application.UseCases.DummyEntity.Queries.GetDummyEntityBy
             return entity.To<DummyEntityDto>();
         }
     }
-}
+} */

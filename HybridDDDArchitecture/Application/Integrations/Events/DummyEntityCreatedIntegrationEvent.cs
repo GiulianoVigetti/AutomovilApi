@@ -2,7 +2,7 @@
 
 namespace Application
 {
-    public class DummyEntityCreatedIntegrationEvent : IntegrationEvent
+    /* public class DummyEntityCreatedIntegrationEvent : IntegrationEvent
     {
         public DummyEntityCreatedIntegrationEvent()
         {
@@ -17,5 +17,5 @@ namespace Application
             : base(id, date, eventType, subject, data)
         {
         }
-    }
+    } */
 }

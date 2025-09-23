@@ -2,7 +2,7 @@
 using Core.Application;
 using System.ComponentModel.DataAnnotations;
 
-namespace Application.UseCases.DummyEntity.Queries.GetDummyEntityBy
+/* namespace Application.UseCases.DummyEntity.Queries.GetDummyEntityBy
 {
     public class GetDummyEntityByQuery : IRequestQuery<DummyEntityDto>
     {
@@ -13,4 +13,4 @@ namespace Application.UseCases.DummyEntity.Queries.GetDummyEntityBy
         {
         }
     }
-}
+} */

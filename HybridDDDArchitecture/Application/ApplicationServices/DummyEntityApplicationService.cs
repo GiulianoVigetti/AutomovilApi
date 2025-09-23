@@ -7,7 +7,8 @@ namespace Application.ApplicationServices
     /// relacionados a la entidad Dummy que no son responsabilidad del
     /// handler que ejecuta el caso de uso.
     /// </summary>
-    public class DummyEntityApplicationService(IDummyEntityRepository context) : IDummyEntityApplicationService
+    
+    /* public class DummyEntityApplicationService(IDummyEntityRepository context) : IDummyEntityApplicationService
     {
         private readonly IDummyEntityRepository _context = context ?? throw new ArgumentNullException(nameof(context));
 
@@ -19,5 +20,5 @@ namespace Application.ApplicationServices
 
             return response != null;
         }
-    }
+    } */
 }

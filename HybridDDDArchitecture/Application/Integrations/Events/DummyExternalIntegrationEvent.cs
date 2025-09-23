@@ -2,7 +2,7 @@
 
 namespace Application
 {
-    public class DummyExternalIntegrationEvent : IntegrationEvent
+    /* public class DummyExternalIntegrationEvent : IntegrationEvent
     {
         public DummyExternalIntegrationEvent()
         {
@@ -17,5 +17,5 @@ namespace Application
             : base(id, date, eventType, subject, data)
         {
         }
-    }
+    } */
 }
