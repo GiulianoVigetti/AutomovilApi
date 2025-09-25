@@ -1,5 +1,5 @@
 ﻿using Application;
-using Application.Registrations;
+using HybridDDDArchitecture.Core.Application.Registrations;
 using AutoMapper;
 using Core.Application;
 using Filters;
@@ -67,7 +67,7 @@ namespace API
             var eventBus = app.ApplicationServices.GetRequiredService<IEventBus>();
             // Aqui se registran las subscripciones a eventos del bus de eventos, vinculando
             //eventos con sus respectivos handlers
-            eventBus.Subscribe<DummyEntityCreatedIntegrationEvent, DummyEntityCreatedIntegrationEventHandlerSub>();
+            /* eventBus.Subscribe<DummyEntityCreatedIntegrationEvent, DummyEntityCreatedIntegrationEventHandlerSub>(); */
         }
     }
 }
