@@ -1,4 +1,4 @@
-﻿using Application.Repositories;
+﻿/*using Application.Repositories;
 using Core.Infraestructure.Repositories.MongoDb;
 using Domain.Entities;
 
@@ -17,3 +17,4 @@ namespace Infrastructure.Repositories.Mongo
         }
     }
 }
+*/

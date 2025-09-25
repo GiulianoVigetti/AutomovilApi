@@ -1,46 +1,63 @@
-﻿using Application.ApplicationServices;
-using Core.Application;
+﻿using HybridDDDArchitecture.Core.Application.ApplicationServices;
 using Microsoft.Extensions.DependencyInjection;
-using System.Reflection;
 
-namespace Application.Registrations
+namespace HybridDDDArchitecture.Core.Application.Registrations
+{
+    public static class ApplicationServicesRegistration
+    {
+        public static IServiceCollection AddApplicationServices(this IServiceCollection services)
+        {
+            // Application Services
+            services.AddScoped<IAutomovilService, AutomovilService>();
+
+            return services;
+        }
+    }
+}
+/*using HybridDDDArchitecture.Core.Application.ApplicationServices;
+using HybridDDDArchitecture.Core.Application.Mappings;
+using Microsoft.Extensions.DependencyInjection;
+using AutoMapper;
+
+namespace HybridDDDArchitecture.Core.Application.Registrations
 {
     /// <summary>
-    /// Aqui se deben registrar todas las dependencias de la capa de aplicacion
+    /// Aquí se deben registrar todas las dependencias de la capa de aplicación
     /// </summary>
     public static class ApplicationServicesRegistration
     {
         public static IServiceCollection AddApplicationServices(this IServiceCollection services)
         {
-            /* Automapper */
-            services.AddAutoMapper(config => config.AddMaps(Assembly.GetExecutingAssembly()));
+            // Automapper 
+            services.AddAutoMapper(typeof(AutomovilMappingProfile));
 
-            /* EventBus */
-            services.AddPublishers();
-            services.AddSubscribers();
+            // Application Services
+            services.AddScoped<IAutomovilService, AutomovilService>();
 
-            /* MediatR*/
-            services.AddMediatR(config => config.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly()));
-            services.AddScoped<ICommandQueryBus, MediatrCommandQueryBus>();
-
-            /* Application Services */
-            services.AddScoped<IDummyEntityApplicationService, DummyEntityApplicationService>();
-
-            return services;
-        }
-
-        private static IServiceCollection AddPublishers(this IServiceCollection services)
-        {
-            //Aqui se registran los handlers que publican en el bus de eventos
-            services.AddTransient<IIntegrationEventHandler<DummyEntityCreatedIntegrationEvent>, DummyEntityCreatedIntegrationEventHandlerPub>();
-            return services;
-        }
-
-        private static IServiceCollection AddSubscribers(this IServiceCollection services)
-        {
-            //Aqui se registran los handlers que se suscriben al bus de eventos
-            services.AddTransient<DummyEntityCreatedIntegrationEventHandlerSub>();
             return services;
         }
     }
-}
+}*/
+
+/*using HybridDDDArchitecture.Core.Application.ApplicationServices;
+using Microsoft.Extensions.DependencyInjection;
+
+namespace HybridDDDArchitecture.Core.Application.Registrations
+{
+    /// <summary>
+    /// Aquí se deben registrar todas las dependencias de la capa de aplicación
+    /// </summary>
+    public static class ApplicationServicesRegistration
+    {
+        public static IServiceCollection AddApplicationServices(this IServiceCollection services)
+        {
+            // Automapper - Usar el que ya está configurado en Core.Application.Mapping 
+            // services.AddAutoMapper(...); // Lo comentamos por ahora
+
+            // Application Services 
+            services.AddScoped<IAutomovilService, AutomovilService>();
+
+            return services;
+        }
+    }
+}*/

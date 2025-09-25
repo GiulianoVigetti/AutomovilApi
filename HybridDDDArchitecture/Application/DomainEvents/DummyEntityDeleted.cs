@@ -1,4 +1,4 @@
-﻿using Core.Application;
+﻿/*using Core.Application;
 
 namespace Application.DomainEvents
 {
@@ -11,4 +11,4 @@ namespace Application.DomainEvents
             DummyIdProperty = id;
         }
     }
-}
+}*/

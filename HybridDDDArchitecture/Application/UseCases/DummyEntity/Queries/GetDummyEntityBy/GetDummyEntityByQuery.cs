@@ -1,4 +1,4 @@
-﻿using Application.DataTransferObjects;
+﻿/*using Application.DataTransferObjects;
 using Core.Application;
 using System.ComponentModel.DataAnnotations;
 
@@ -14,3 +14,4 @@ namespace Application.UseCases.DummyEntity.Queries.GetDummyEntityBy
         }
     }
 }
+*/

@@ -1,4 +1,4 @@
-﻿using Core.Application;
+﻿/*using Core.Application;
 using MediatR;
 using System.ComponentModel.DataAnnotations;
 using static Domain.Enums.Enums;
@@ -18,3 +18,4 @@ namespace Application.UseCases.DummyEntity.Commands.UpdateDummyEntity
         }
     }
 }
+*/

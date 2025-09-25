@@ -1,4 +1,4 @@
-﻿using static Domain.Enums.Enums;
+﻿/*using static Domain.Enums.Enums;
 
 namespace Application.DataTransferObjects
 {
@@ -7,4 +7,4 @@ namespace Application.DataTransferObjects
         public string DummyPropertyOne { get; private set; }
         public DummyValues DummyPropertyTwo { get; private set; }
     }
-}
+}*/

@@ -1,4 +1,4 @@
-﻿using Application.DataTransferObjects;
+﻿/*using Application.DataTransferObjects;
 using Core.Application;
 
 namespace Application.UseCases.DummyEntity.Queries.GetAllDummyEntities
@@ -7,3 +7,4 @@ namespace Application.UseCases.DummyEntity.Queries.GetAllDummyEntities
     {
     }
 }
+*/

@@ -1,10 +1,10 @@
-﻿using Application.Repositories;
+﻿using HybridDDDArchitecture.Core.Application.Repositories;
 using Domain.Others.Utils;
 using Infrastructure.Constants;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using MongoDB.Bson.Serialization.Conventions;
+using HybridDDDArchitecture.Core.Infraestructure.Repositories.Sql;
 using static Domain.Enums.Enums;
 
 namespace Infrastructure.Factories
@@ -21,8 +21,7 @@ namespace Infrastructure.Factories
                     services.AddSqlServerRepositories(configuration);
                     break;
                 case DatabaseType.MONGODB:
-                    services.AddMongoDbRepositories(configuration);
-                    break;
+                    throw new NotSupportedException("MongoDB no está configurado para este proyecto");
                 default:
                     throw new NotSupportedException(InfrastructureConstants.DATABASE_TYPE_NOT_SUPPORTED);
             }
@@ -30,30 +29,19 @@ namespace Infrastructure.Factories
 
         private static IServiceCollection AddSqlServerRepositories(this IServiceCollection services, IConfiguration configuration)
         {
-            services.AddDbContext<Repositories.Sql.StoreDbContext>(options =>
+            // Registrar el contexto de Automovil
+            services.AddDbContext<AutomovilDbContext>(options =>
             {
                 options.UseSqlServer(configuration.GetConnectionString("SqlConnection"));
             }, ServiceLifetime.Scoped);
 
-            //Habilitar para trabajar con Migrations
-            var context = services.BuildServiceProvider().GetRequiredService<Repositories.Sql.StoreDbContext>();
+            // Habilitar para trabajar con Migrations
+            var serviceProvider = services.BuildServiceProvider();
+            var context = serviceProvider.GetRequiredService<AutomovilDbContext>();
             context.Database.Migrate();
 
-            /* Sql Repositories */
-            services.AddTransient<IDummyEntityRepository, Repositories.Sql.DummyEntityRepository>();
-
-            return services;
-        }
-
-        private static IServiceCollection AddMongoDbRepositories(this IServiceCollection services, IConfiguration configuration)
-        {
-            ConventionRegistry.Register("Camel Case", new ConventionPack { new CamelCaseElementNameConvention() }, _ => true);
-
-            Repositories.Mongo.StoreDbContext db = new(configuration.GetConnectionString("MongoConnection") ?? throw new NullReferenceException());
-            services.AddSingleton(typeof(Repositories.Mongo.StoreDbContext), db);
-
-            /* MongoDb Repositories */
-            services.AddTransient<IDummyEntityRepository, Repositories.Mongo.DummyEntityRepository>();
+            // Registrar repositorios
+            services.AddTransient<IAutomovilRepository, AutomovilRepository>();
 
             return services;
         }

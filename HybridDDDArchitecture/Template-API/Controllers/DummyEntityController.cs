@@ -1,4 +1,4 @@
-﻿using Application.UseCases.DummyEntity.Commands.CreateDummyEntity;
+﻿/*using Application.UseCases.DummyEntity.Commands.CreateDummyEntity;
 using Application.UseCases.DummyEntity.Commands.DeleteDummyEntity;
 using Application.UseCases.DummyEntity.Commands.UpdateDummyEntity;
 using Application.UseCases.DummyEntity.Queries.GetAllDummyEntities;
@@ -69,3 +69,4 @@ namespace Controllers
         }
     }
 }
+*/

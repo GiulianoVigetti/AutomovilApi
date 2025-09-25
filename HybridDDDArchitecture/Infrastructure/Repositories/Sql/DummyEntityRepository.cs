@@ -1,4 +1,4 @@
-﻿using Application.Repositories;
+﻿/*using Application.Repositories;
 using Core.Infraestructure.Repositories.Sql;
 using Domain.Entities;
 
@@ -14,3 +14,4 @@ namespace Infrastructure.Repositories.Sql
     {
     }
 }
+*/

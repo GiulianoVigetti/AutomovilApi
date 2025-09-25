@@ -1,5 +1,18 @@
 ﻿namespace Domain.Enums
 {
+    public static class Enums
+    {
+        public enum DatabaseType
+        {
+            MYSQL,
+            MARIADB,
+            SQLSERVER,
+            MONGODB
+        }
+    }
+}
+/*namespace Domain.Enums
+{
     /// <summary>
     /// Las enumeraciones deben ir definidas aqui
     /// </summary>
@@ -25,3 +38,4 @@
         }
     }
 }
+*/

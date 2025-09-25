@@ -1,4 +1,4 @@
-﻿using Core.Application;
+﻿/*using Core.Application;
 using static Domain.Enums.Enums;
 
 namespace Application.DomainEvents
@@ -14,4 +14,4 @@ namespace Application.DomainEvents
         public string DummyPropertyOne { get; set; }
         public DummyValues DummyPropertyTwo { get; set; }
     }
-}
+}*/

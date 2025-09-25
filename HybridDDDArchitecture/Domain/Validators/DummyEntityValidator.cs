@@ -1,4 +1,4 @@
-﻿using Core.Domain.Validators;
+﻿/*using Core.Domain.Validators;
 using Domain.Constants;
 using Domain.Entities;
 using FluentValidation;
@@ -19,3 +19,4 @@ namespace Domain.Validators
         }
     }
 }
+*/
