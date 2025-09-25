@@ -4,7 +4,7 @@ using Domain.Entities;
 
 namespace Infrastructure.Repositories.Mongo
 {
-    /// <summary>
+    /* /// <summary>
     /// Ejemplo de repositorio Mongo de entidad Dummy
     /// Todo repositorio debe implementar la interfaz que hereda de <see cref="Common.Application.Repositories.MongoDb.IRepository{T}"/>
     /// creada en la capa de aplicacion, y heredar de <see cref="BaseRepository{T}"/>
@@ -15,5 +15,5 @@ namespace Infrastructure.Repositories.Mongo
         public DummyEntityRepository(StoreDbContext context) : base(context)
         {
         }
-    }
+    } */
 }

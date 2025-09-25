@@ -4,7 +4,7 @@ using static Domain.Enums.Enums;
 
 namespace Domain.Entities
 {
-    /// <summary>
+    /* /// <summary>
     /// Ejemplo de entidad de dominio Dummy
     /// Toda entidad de dominio debe heredar de <see cref="DomainEntity{TEntity, TValidator}"/>
     /// Donde T es del tipo <see cref="Core.Domain.Validators.EntityValidator{TEntity}"/>
@@ -45,5 +45,5 @@ namespace Domain.Entities
         {
             DummyPropertyTwo = value;
         }
-    }
+    } */
 }

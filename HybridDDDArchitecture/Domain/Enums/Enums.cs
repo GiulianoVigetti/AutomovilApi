@@ -6,7 +6,7 @@
 
     public class Enums
     {
-        /// <summary>
+        /* /// <summary>
         /// Ejemplo de enumeracion Dummy
         /// </summary>
         public enum DummyValues
@@ -14,7 +14,7 @@
             value1,
             value2,
             value3,
-        }
+        } */
 
         public enum DatabaseType
         {

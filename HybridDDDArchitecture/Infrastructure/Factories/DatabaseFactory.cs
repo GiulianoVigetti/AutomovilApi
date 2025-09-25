@@ -40,7 +40,7 @@ namespace Infrastructure.Factories
             context.Database.Migrate();
 
             /* Sql Repositories */
-            services.AddTransient<IDummyEntityRepository, Repositories.Sql.DummyEntityRepository>();
+            /* services.AddTransient<IDummyEntityRepository, Repositories.Sql.DummyEntityRepository>(); */
 
             return services;
         }
@@ -53,7 +53,7 @@ namespace Infrastructure.Factories
             services.AddSingleton(typeof(Repositories.Mongo.StoreDbContext), db);
 
             /* MongoDb Repositories */
-            services.AddTransient<IDummyEntityRepository, Repositories.Mongo.DummyEntityRepository>();
+            /* services.AddTransient<IDummyEntityRepository, Repositories.Mongo.DummyEntityRepository>(); */
 
             return services;
         }
