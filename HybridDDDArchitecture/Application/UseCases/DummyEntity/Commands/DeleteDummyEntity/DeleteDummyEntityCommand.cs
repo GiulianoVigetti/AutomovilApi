@@ -2,7 +2,7 @@
 using MediatR;
 using System.ComponentModel.DataAnnotations;
 
-namespace Application.UseCases.DummyEntity.Commands.DeleteDummyEntity
+/* namespace Application.UseCases.DummyEntity.Commands.DeleteDummyEntity
 {
     public class DeleteDummyEntityCommand : IRequestCommand<Unit>
     {

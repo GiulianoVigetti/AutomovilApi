@@ -6,7 +6,7 @@ using MongoDB.Bson.Serialization.Serializers;
 
 namespace Infrastructure.Repositories.Mongo.Maps
 {
-    internal static class DummyEntityMap
+    /* internal static class DummyEntityMap
     {
         public static void Configure()
         {
@@ -24,6 +24,6 @@ namespace Infrastructure.Repositories.Mongo.Maps
         {
             return "common.dummyentity";
         }
-    }
+    } */
 }
 */

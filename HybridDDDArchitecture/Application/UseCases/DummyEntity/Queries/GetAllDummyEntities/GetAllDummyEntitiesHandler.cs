@@ -2,7 +2,7 @@
 using Application.Repositories;
 using Core.Application;
 
-namespace Application.UseCases.DummyEntity.Queries.GetAllDummyEntities
+/* namespace Application.UseCases.DummyEntity.Queries.GetAllDummyEntities
 {
     internal class GetAllDummyEntitiesHandler(IDummyEntityRepository context) : IRequestQueryHandler<GetAllDummyEntitiesQuery, QueryResult<DummyEntityDto>>
     {

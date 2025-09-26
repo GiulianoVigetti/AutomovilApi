@@ -1,8 +1,8 @@
 ﻿/*namespace Application.ApplicationServices
 {
-    internal interface IDummyEntityApplicationService
+    /* internal interface IDummyEntityApplicationService
     {
         bool DummyEntityExist(object value);
-    }
+    } */
 }
 */

@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations;
 using static Domain.Enums.Enums;
 
-namespace Application.UseCases.DummyEntity.Commands.CreateDummyEntity
+/* namespace Application.UseCases.DummyEntity.Commands.CreateDummyEntity
 {
     /// <summary>
     /// Ejemplo de comando para crear una entidad de dominio Dummy

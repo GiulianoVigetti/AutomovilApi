@@ -4,7 +4,7 @@ using Core.Application;
 using MediatR;
 using Microsoft.Extensions.Logging;
 
-namespace Application.UseCases.DummyEntity.Notifications.NotificateDummyEntityCreated
+/* namespace Application.UseCases.DummyEntity.Notifications.NotificateDummyEntityCreated
 {
     internal class NotificateDummyEntityCreatedHandler : INotificationHandler<DummyEntityCreated>
     {

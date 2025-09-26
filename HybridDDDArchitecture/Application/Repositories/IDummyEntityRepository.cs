@@ -8,9 +8,9 @@ namespace Application.Repositories
     /// Todo repositorio debe implementar la interfaz <see cref="IRepository{TEntity}"/>
     /// donde <c TEntity> es la entidad de dominio que queremos persistir
     /// </summary>
-    public interface IDummyEntityRepository : IRepository<DummyEntity>
+    /* public interface IDummyEntityRepository : IRepository<DummyEntity>
     {
         //Aqui se definen propiedades y metodos Custom.
-    }
+    } */
 }
 */

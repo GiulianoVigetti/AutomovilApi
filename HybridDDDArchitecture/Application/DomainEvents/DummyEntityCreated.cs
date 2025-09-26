@@ -7,7 +7,7 @@ namespace Application.DomainEvents
     /// Ejemplo de un evento de dominio para la entidad Dummy.
     /// Todo evento de dominio debe heredar de <see cref="DomainEvent"/>
     /// </summary>
-    internal sealed class DummyEntityCreated : DomainEvent
+    /* internal sealed class DummyEntityCreated : DomainEvent
     {
         //Aqui se definen las propiedades compartidas en el evento
         public string Id { get; set; }

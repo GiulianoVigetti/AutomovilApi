@@ -18,14 +18,14 @@ namespace Infrastructure.Repositories.Mongo
 
         public override IMongoCollection<T> GetCollection<T>()
         {
-            if (typeof(T) == typeof(DummyEntity))
-                return Database.GetCollection<T>(DummyEntityMap.GetCollectionName());
+            /* if (typeof(T) == typeof(DummyEntity))
+                return Database.GetCollection<T>(DummyEntityMap.GetCollectionName()); */
             return null;
         }
 
         private static void MapTypes()
         {
-            DummyEntityMap.Configure();
+            /* DummyEntityMap.Configure(); */
         }
     }
 }

@@ -2,7 +2,7 @@
 
 namespace Application
 {
-    public class DummyEntityCreatedIntegrationEventHandlerPub : IIntegrationEventHandler<DummyEntityCreatedIntegrationEvent>
+    /* public class DummyEntityCreatedIntegrationEventHandlerPub : IIntegrationEventHandler<DummyEntityCreatedIntegrationEvent>
     {
         private readonly IEventBus _eventBus;
 
@@ -17,6 +17,6 @@ namespace Application
 
             return Task.CompletedTask;
         }
-    }
+    } */
 }
 */
